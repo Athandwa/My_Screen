@@ -3,6 +3,8 @@
 
   <head>
     <link rel="stylesheet" href="my_screen.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
     <!-- <link rel="" href="image1.html"> -->
   </head>
     <body>
@@ -11,16 +13,18 @@
           <h1>Road Safety Rules</h1>
         </header>
         <nav>
-          <ul>
+           <script type="text/x-handlebars-tamplate" class="RadioTamplate"
             <div class="options">
-            <h3>Road & Traffics Safety Tips</h3>
-            <li><input type="radio" name="tips" value="Alcohol" onclick="func();">Alcohol and Drugs</li>
-            <li><input type="radio" name="tips" value="Speed" onclick="func();">Safer speeds</li>
-            <li><input type="radio" name="tips" value="Phones" onclick="func();">Mobile phones</li>
-            <li><input type="radio" name="tips" value="Behavour" onclick="func();">Dangerous Behaviours</li>
-            <li><input type="radio" name="tips" value="Road Sharing" onclick="func();">Sharing The Road</li>
+              <h3>Road & Traffics Safety Tips</h3>
+            <input type="radio" name="tips" value="Alcohol">{{#each options}}{{tip1}}{{/each}}<br>
+            <input type="radio" name="tips" value="Speed" >{{#each options}}{{tip2}}{{/each}}<br>
+            <input type="radio" name="tips" value="Phones">{{#each options}}{{tip3}}{{/each}}<br>
+            <input type="radio" name="tips" value="Behavour">{{#each options}}{{tip4}}{{/each}}<br>
+            <input type="radio" name="tips" value="Road Sharing">{{#each options}}{{tip5}}{{/each}}<br>
+
           </div>
-          </ul>
+        </script>
+        <div id='display'></div>
         </nav>
         <article>
             <h2>Road & Traffic Rules</h2>
@@ -35,5 +39,6 @@
             </article>
       <footer>Copyright &copy; lakhiwe@codeX.co</footer>
     </div>
+   <script src="my_screen.js" charset="utf-8"></script>
 </body>
 </html>
