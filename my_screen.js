@@ -1,22 +1,33 @@
-function func()
-{
-  var radioBtns = document.getElementsByName("tips")
+var road_tips =[
+  {tip1: 'Alcohol and Drugs'},
+  {tip2: 'Safer speeds'},
+  {tip3: 'Mobile phones'},
+  {tip4: 'Dangerous Behaviours'},
+  {tip5: 'Sharing The Road'}
+]
+var radioTamplate = document.querySelector('.RadioTamplate');
+var complideRadios = Handlebars.compile(radioTamplate.innerHTML);
 
-      if (radioBtns[0].checked) {
-        alert("Lakhiwe");
-      }
-      else if (radioBtns[1].checked) {
-        alert("lucky")
-      }
+var display = document.getElementById('display');
 
-      else if (radioBtns[2].checked) {
-        alert("luks");
-      }
+(function () {
+  var results = complideRadios({
+    options: road_tips
+  })
+  display.innerHTML = results;
+})
+();
 
-      else if (radioBtns[3].checked) {
-        alert("lucky2");
-      }
-      else if (radioBtns[4].checked) {
-        alert("lucy");
-      }
-}
+
+
+// var options = document.querySelector('.options');
+//  console.log(options);
+//
+// options.addEventListener('change', function (evt) {
+//   console.log(evt.target.value);
+//
+// for (var i = 0; i < options.length; i++) {
+//   options[i]
+// }
+//
+// })
