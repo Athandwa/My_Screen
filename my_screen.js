@@ -9,6 +9,7 @@ var radioTamplate = document.querySelector('.RadioTamplate');
 var complideRadios = Handlebars.compile(radioTamplate.innerHTML);
 
 var display = document.getElementById('display');
+var displayInfo = document.getElementById('displayInfo');
 
 (function () {
   var results = complideRadios({
@@ -19,24 +20,26 @@ var display = document.getElementById('display');
 ();
 
 var tips = document.getElementsByName('tips');
-var display = document.getElementById('display');
+//var display = document.getElementById('display');
 
 addEventListener('click', function() {
 if (tips[0].checked) {
-  alert('Dont mix driving with alcohol or drugs (including medicine). To avoid the risks plan ahead.');
+  displayInfo.innerHTML = 'Dont mix driving with alcohol or drugs (including medicine). To avoid the risks plan ahead.';
 }
 else if (tips[1].checked) {
-  alert('Speed is a key factor in crashes and road trauma. Exceeding the speed limit increases the likelihood of a crash.');
+  displayInfo.innerHTML = 'Speed is a key factor in crashes and road trauma. Exceeding the speed limit increases the likelihood of a crash.';
 }
 else if (tips[2].checked) {
-  alert('Using a mobile phone while driving impairs your driving performance through distraction and increases the risk of crashing by at least four times.');
+  displayInfo.innerHTML = 'Using a mobile phone while driving impairs your driving performance through distraction and increases the risk of crashing by at least four times.';
 }
 else if (tips[3].checked) {
-  alert('Inattention and driving with attitude are just two dangerous driving behaviours that place the safety of you and other road users at risk.');
+  displayInfo.innerHTML = 'Inattention and driving with attitude are just two dangerous driving behaviours that place the safety of you and other road users at risk.';
 }
 else if (tips[4].checked) {
-  alert('All road users should know their responsibilities and respect the rights to safety of all who share our roads. This includes pedestrians, scooters and skaters, cyclists, horses and heavy vehicles.');
+  displayInfo.innerHTML = 'All road users should know their responsibilities and respect the rights to safety of all who share our roads. This includes pedestrians, scooters and skaters, cyclists, horses and heavy vehicles.';
 }
+  document.getElementById("displayInfo").style.display = "show";
+  document.getElementById("displayInfo").style.display = "block"
 })
 
 
