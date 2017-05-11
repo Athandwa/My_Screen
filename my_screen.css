@@ -40,7 +40,7 @@ article {
     margin-left: 170px;
     border-left: 1px solid gray;
     padding: 1em;
-    overflow: hidden;
+    overflow: scroll;
     height: 560px;
 }
 h2{
@@ -51,6 +51,15 @@ h2{
   text-align: center;
   font-style: italic;
 }
-/*li{
-  margin: 15px 0;
-}*/
+
+#displayInfo{
+  margin-top: 30px;
+  width: 170px;
+  height: 150px;
+  background-color: yellow;
+  box-shadow: 10px 10px 5px #888888;
+  font-style: italic;
+  display:none;
+
+  /*font-weight: bold;*/
+}
