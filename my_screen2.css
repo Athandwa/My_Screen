@@ -5,20 +5,25 @@ div.container {
     margin-right: 2px;
 }
 
-h1{
-  text-align: center;
-  font-style: italic;
-  text-shadow: 0.1em 0.1em 0.15em #333;
-  font-size: 3em;
+h1 {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0.1em 0.1em 0.15em #333;
+    font-size: 3em;
 }
 
-header{
+header {
     padding: 1em;
     color: white;
-    background-color: Crimson ;
+    background-color: Crimson;
     clear: left;
     text-align: center;
 }
+
+img {
+    cursor: pointer;
+}
+
 
 /*nav {
     float: left;
@@ -44,14 +49,16 @@ article {
     overflow: hidden;
     height: 650px;
 }
-h2{
-  padding: 1em;
-  color: white;
-  background-color: powderblue;
-  clear: left;
-  text-align: center;
-  font-style: italic;
+
+h2 {
+    padding: 1em;
+    color: white;
+    background-color: powderblue;
+    clear: left;
+    text-align: center;
+    font-style: italic;
 }
-li{
-  margin: 15px 0;
+
+li {
+    margin: 15px 0;
 }
