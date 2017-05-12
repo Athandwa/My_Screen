@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <link rel="stylesheet" href="my_screen.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
 
     <!-- <link rel="" href="image1.html"> -->
-  </head>
-    <body>
-      <div class="container">
+</head>
+
+<body>
+    <div class="container">
         <header>
-          <h1>Road Safety Rules</h1>
+            <h1>Road Safety Rules</h1>
         </header>
         <nav>
-           <script type="text/x-handlebars-tamplate" class="RadioTamplate"
-            <div class="options">
-              <h3>Road & Traffics Safety Tips</h3>
-            <input type="radio" name="tips" value="Alcohol">{{#each options}}{{tip1}}{{/each}}<br>
-            <input type="radio" name="tips" value="Speed" >{{#each options}}{{tip2}}{{/each}}<br>
-            <input type="radio" name="tips" value="Phones">{{#each options}}{{tip3}}{{/each}}<br>
-            <input type="radio" name="tips" value="Behavour">{{#each options}}{{tip4}}{{/each}}<br>
-            <input type="radio" name="tips" value="Road Sharing">{{#each options}}{{tip5}}{{/each}}<br>
+            <script type="text/x-handlebars-tamplate" class="RadioTamplate">
+            <h3>Road & Traffics Safety Tips</h3>
+                {{#each options}}
+                <input type="radio" name="tips" value="{{this.tipValue}}">{{tip}}<br>
+                 {{/each}}
+            </script>
+            <div id='display'>
+              <div class="options">
 
-          </div>
-        </script>
-        <div id='display'></div>
-        <div id="displayInfo"></div>
+              </div>
+            </div>
+
+            <div id="displayInfo"></div>
         </nav>
         <article>
             <h2>Road & Traffic Rules</h2>
-            <center><div class="images">
-
-            <a href="index2.html"><img src="images/image1.jpg" alt="image1.jpg" class ="image1" style="width:250px;height:200px;"></a>
-            <a href="index3.html"><img src="images/image2.jpg" alt="image2.jpg" class="image2" style="width:250px;height:200px;"></a>
-            <a href="index4.html"><img src="images/image3.jpeg" alt="image3.jpeg" class="image3" style="width:250px;height:200px;"></a>
-            <a href="index5.html"><img src="images/image4.jpeg" alt="image4.jpeg" class="image4" style="width:250px;height:200px;"></a>
-            <a href="index6.html"><img src="images/image5.png" alt="image5.png" class="image5" style="width:250px;height:200px;"></a>
-            <a href="index7.html"><img src="images/image6.jpeg" alt="image6.jpeg" class="image6" style="width:250px;height:200px;"></a>
-            <a href="index8.html"><img src="images/image7.png" alt="image7.png" class="image7" style="width:250px;height:200px;"></a>
-            <a href="index9.html"><img src="images/image8.png" alt="image5.png" class="image8" style="width:250px;height:200px;"></a>
-          </div></center>
-            </article>
-      <footer>Copyright &copy; lakhiwe@codeX.co</footer>
+            <center>
+                <div class="images">
+                  <img src="images/image1.jpg" data-picture-id="overTake" alt="image1.jpg" class="image" style="width:250px;height:200px;">
+                  <img src="images/image2.jpg" data-picture-id="breakDown" alt="image2.jpg" class="image" style="width:250px;height:200px;">
+                  <img src="images/image3.jpeg" data-picture-id="seatBelt" alt="image3.jpeg" class="image" style="width:250px;height:200px;">
+                  <img src="images/image4.jpeg" data-picture-id="trafficLight" alt="image4.jpeg" class="image" style="width:250px;height:200px;">
+                  <img src="images/image5.png" data-picture-id="slippery" alt="image5.png" class="image" style="width:250px;height:200px;">
+                  <img src="images/image6.jpeg" data-picture-id="roadWork" alt="image6.jpeg" class="image" style="width:250px;height:200px;">
+                  <img src="images/image7.png" data-picture-id="speedLimit" alt="image7.png" class="image" style="width:250px;height:200px;">
+                  <img src="images/image8.png" data-picture-id="crossings" alt="image5.png" class="image" style="width:250px;height:200px;">
+                </div>
+            </center>
+        </article>
+        <footer>Copyright &copy; lakhiwe@codeX.co</footer>
     </div>
-   <script src="my_screen.js" charset="utf-8"></script>
+        <div class="container" id="content">
+          <div class="hide_content">
+            <header>
+                <h1>Overtaking Rules</h1>
+            </header>
+            <article>
+                <p>Overtaking other vehicles can be dangerous. The difficulty with overtaking is judging the space required to complete the manoeuvre safely.</p>
+                <p>You must overtake on the right unless a vehicle is waiting to turn right, is stationary, or if you and the other vehicle are travelling in marked lanes. In these instances you may overtake on the left side if it is safe.</p>
+                <h3>When overtaking you must:</h3>
+                <ul>
+                    <li>Not go over the speed limit</li>
+                    <li>Make sure the road ahead is clear and that there is sufficient space for you to complete the manoeuvre (check side streets and other lanes to ensure nothing will enter this space while you are overtaking)</li>
+                    <li>Check mirrors</li>
+                    <li>Signal each change in position long enough to give sufficient warning to others</li>
+                    <li>Check blind spots for motorcycles and other vehicles before changing your lane position</li>
+                    <li>Pass the vehicle with sufficient space to avoid a collision (you should be able to see the vehicle you have overtaken in your rear vision mirror before you move in front of it)</li>
+                    <li>Give way to traffic already in the lane you are moving to.</li>
+                </ul>
+                <h3>You must not overtake:</h3>
+                <ul>
+                    <li>Unless you have a clear view of any approaching traffic and you can complete the manoeuvre safely (do not commence an overtaking manoeuvre when approaching a crest, curve or any limited vision situation)</li>
+                    <li>Another vehicle that is stopping or has stopped at a pedestrian crossing, intersection or railway crossing</li>
+                    <li>Across an unbroken (continuous) line, unless the line closest to you is broken</li>
+                    <li>Where a road narrows.</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+
+    <script src="my_screen.js" charset="utf-8"></script>
 </body>
+
 </html>
