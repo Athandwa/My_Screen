@@ -27,6 +27,8 @@ var display = document.getElementById('display');
 var displayInfo = document.getElementById('displayInfo');
 var options = document.querySelector('.options');
 var container = document.querySelector('.hide_content');
+var secondContent = document.querySelector('.secondContent');
+
 console.log(container);
 
 (function() {
@@ -59,11 +61,72 @@ options.addEventListener('click', function() {
 var images = document.querySelector('.image')
 // console.log(images);
 
-
-
 images.addEventListener('click',  function(){
   console.log(images.dataset.pictureId);
   if (images.dataset.pictureId == 'overTake') {
     container.classList.remove('hide_content');
   }
+  else if (images.dataset.pictureId == 'breakDown') {
+    secondContent.classList.remove('secondContent')
+  }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var secondContent = document.querySelector('.secondContent');
+// var seatBeltContent = document.querySelector('.seatBeltContent');
+// var robotsContent = document.querySelector('.robotsContent');
+//console.log(container);
+
+// container.classList.add('hide_content');
+// secondContent.classList.add('hide_content');
+// seatBeltContent.classList.add('hide_content');
+// robotsContent.classList.add('hide_content');
+// if (images.dataset.pictureId == 'overTake') {
+//   container.classList.remove('overTaking');
+// }
+// else if (images.dataset.pictureId == 'breakDown') {
+//     secondContent.classList.remove('secondContent');
+// }
+//   else if (images.dataset.pictureId == 'seatBelt') {
+//     seatBeltContent.classList.remove('seatBeltContent');
+//   }
+//   else if (images.dataset.pictureId == 'trafficLight') {
+//     robotsContent.classList.remove('robotsContent');
+//   }
+//   // else if (images.dataset.pictureId == 'seatBelt') {
+//   //   robotsContent.classList.remove('robotsContent');
+//   // }
+
+
+
+
+
+// if (images.dataset.pictureId == 'overTake') {
+//   container.classList.add('show_content');
+//   secondContent.classList.add('hide_content');
+//   seatBeltContent.classList.add('hide_content');
+//   robotsContent.classList.add('hide_content');
+// }
+// else if (images.dataset.pictureId == 'breakDown') {
+//
+//   container.classList.add('hide_content');
+//   secondContent.classList.add('show_content');
+//   seatBeltContent.classList.add('hide_content');
+//   robotsContent.classList.add('hide_content');
+//
+// }
