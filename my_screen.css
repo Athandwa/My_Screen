@@ -7,6 +7,26 @@ div.container {
 .hide_content {
 display: none;
  }
+.secondContent{
+  display: none;
+}
+ /*.show_content {
+   display: block;
+ }*/
+/*.hidden_content{
+  display: none;
+}
+.seatBeltContent{
+  display: none;
+}
+.robotsContent{
+  display: none;
+}
+.wetRoadContent{
+  display: none;
+}*/
+
+
 h1{
   text-align: center;
   font-style: italic;
