@@ -7,9 +7,15 @@ div.container {
 .hide_content {
 display: none;
  }
+
+ div#content.container ul p{
+    margin-left: 20px;
+ }
+
 .secondContent{
   display: none;
 }
+
  /*.show_content {
    display: block;
  }*/
