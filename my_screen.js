@@ -62,12 +62,13 @@ var images = document.querySelector('.image')
 // console.log(images);
 
 images.addEventListener('click',  function(){
-  console.log(images.dataset.pictureId);
+  //console.log(images.dataset.pictureId);
   if (images.dataset.pictureId == 'overTake') {
     container.classList.remove('hide_content');
   }
-  else if (images.dataset.pictureId == 'breakDown') {
-    secondContent.classList.remove('secondContent')
+
+  else if(images.dataset.pictureId == 'breakDown') {
+    secondContent.classList.remove('secondContent');
   }
 })
 
