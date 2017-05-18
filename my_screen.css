@@ -4,7 +4,7 @@ div.container {
     margin-left: 2px;
     margin-right: 2px;
 }
-.hide_content {
+#firstContent {
 display: none;
  }
 
@@ -12,9 +12,25 @@ display: none;
     margin-left: 20px;
  }
 
-.secondContent{
+#secondContent{
   display: none;
 }
+
+#thirdContent{
+  display: none;
+}
+
+#fourthContent{
+  display: none;
+}
+
+#fifthContent{
+  display: none;
+}
+#sixthContent{
+  display: none;
+}
+
 
  /*.show_content {
    display: block;
@@ -83,7 +99,7 @@ h2{
 #displayInfo{
   margin-top: 30px;
   width: 170px;
-  height: 150px;
+  height: 170px;
   background-color: yellow;
   box-shadow: 10px 10px 5px #888888;
   font-style: italic;
