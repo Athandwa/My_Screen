@@ -4,10 +4,13 @@
 <head>
     <link rel="stylesheet" href="my_screen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+  <link rel="stylesheet" href="./Jquery/jquery-ui-themes-1.12.1/jquery-ui.min.css">.
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- <link rel="" href="image1.html"> -->
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -33,52 +36,46 @@
             <center>
                 <div class="images">
                   <img src="images/image1.jpg" data-picture-id="overTake" alt="image1.jpg" class="image" style="width:250px;height:200px;">
-                  <img src="images/image2.jpg" data-picture-id="breakDown" alt="image2.jpg" class="image" style="width:250px;height:200px;">
-                  <img src="images/image3.jpeg" data-picture-id="seatBelt" alt="image3.jpeg" class="image" style="width:250px;height:200px;">
-                  <img src="images/image4.jpeg" data-picture-id="trafficLight" alt="image4.jpeg" class="image" style="width:250px;height:200px;">
-                  <img src="images/image5.png" data-picture-id="slippery" alt="image5.png" class="image" style="width:250px;height:200px;">
-                  <img src="images/image6.jpeg" data-picture-id="roadWork" alt="image6.jpeg" class="image" style="width:250px;height:200px;">
-                  <img src="images/image7.png" data-picture-id="speedLimit" alt="image7.png" class="image" style="width:250px;height:200px;">
-                  <img src="images/image8.png" data-picture-id="crossings" alt="image5.png" class="image" style="width:250px;height:200px;">
+                  <img src="images/image2.jpg" data-picture-id="breakDown" alt="image2.jpg" class="image2" style="width:250px;height:200px;">
+                  <img src="images/image3.jpeg" data-picture-id="seatBelt" alt="image3.jpeg" class="image3" style="width:250px;height:200px;">
+                  <img src="images/image4.jpeg" data-picture-id="trafficLight" alt="image4.jpeg" class="image4" style="width:250px;height:200px;">
+                  <img src="images/image5.png" data-picture-id="slippery" alt="image5.png" class="image5" style="width:250px;height:200px;">
+                  <img src="images/image6.jpeg" data-picture-id="roadWork" alt="image6.jpeg" class="image6" style="width:250px;height:200px;">
+                  <img src="images/image7.png" data-picture-id="speedLimit" alt="image7.png" class="image7" style="width:250px;height:200px;">
+                  <img src="images/image8.png" data-picture-id="crossings" alt="image5.png" class="image8" style="width:250px;height:200px;">
                 </div>
             </center>
         </article>
+        <div class="container" id="firstContent">
+            <header>
+              <h1>Overtaking Rules</h1>
+            </header>
+            <p>Overtaking other vehicles can be dangerous. The difficulty with overtaking is judging the space required to complete the manoeuvre safely.</p>
+            <p>You must overtake on the right unless a vehicle is waiting to turn right, is stationary, or if you and the other vehicle are travelling in marked lanes. In these instances you may overtake on the left side if it is safe.</p>
+            <h3>When overtaking you must:</h3>
+            <ul>
+              <li>Not go over the speed limit</li>
+              <li>Make sure the road ahead is clear and that there is sufficient space for you to complete the manoeuvre (check side streets and other lanes to ensure nothing will enter this space while you are overtaking)</li>
+              <li>Check mirrors</li>
+              <li>Signal each change in position long enough to give sufficient warning to others</li>
+              <li>Check blind spots for motorcycles and other vehicles before changing your lane position</li>
+              <li>Pass the vehicle with sufficient space to avoid a collision (you should be able to see the vehicle you have overtaken in your rear vision mirror before you move in front of it)</li>
+              <li>Give way to traffic already in the lane you are moving to.</li>
+            </ul>
+            <h3>You must not overtake:</h3>
+            <ul>
+              <li>Unless you have a clear view of any approaching traffic and you can complete the manoeuvre safely (do not commence an overtaking manoeuvre when approaching a crest, curve or any limited vision situation)</li>
+              <li>Another vehicle that is stopping or has stopped at a pedestrian crossing, intersection or railway crossing</li>
+              <li>Across an unbroken (continuous) line, unless the line closest to you is broken</li>
+              <li>Where a road narrows.</li>
+            </ul>
+        </div>
         <footer>Copyright &copy; lakhiwe@codeX.co</footer>
     </div>
-        <div class="container" id="content">
-          <div class="hide_content">
-            <header>
-                <h1>Overtaking Rules</h1>
-            </header>
-            <!-- <article> -->
-                <p>Overtaking other vehicles can be dangerous. The difficulty with overtaking is judging the space required to complete the manoeuvre safely.</p>
-                <p>You must overtake on the right unless a vehicle is waiting to turn right, is stationary, or if you and the other vehicle are travelling in marked lanes. In these instances you may overtake on the left side if it is safe.</p>
-                <h3>When overtaking you must:</h3>
-                <ul>
-                    <li>Not go over the speed limit</li>
-                    <li>Make sure the road ahead is clear and that there is sufficient space for you to complete the manoeuvre (check side streets and other lanes to ensure nothing will enter this space while you are overtaking)</li>
-                    <li>Check mirrors</li>
-                    <li>Signal each change in position long enough to give sufficient warning to others</li>
-                    <li>Check blind spots for motorcycles and other vehicles before changing your lane position</li>
-                    <li>Pass the vehicle with sufficient space to avoid a collision (you should be able to see the vehicle you have overtaken in your rear vision mirror before you move in front of it)</li>
-                    <li>Give way to traffic already in the lane you are moving to.</li>
-                </ul>
-                <h3>You must not overtake:</h3>
-                <ul>
-                    <li>Unless you have a clear view of any approaching traffic and you can complete the manoeuvre safely (do not commence an overtaking manoeuvre when approaching a crest, curve or any limited vision situation)</li>
-                    <li>Another vehicle that is stopping or has stopped at a pedestrian crossing, intersection or railway crossing</li>
-                    <li>Across an unbroken (continuous) line, unless the line closest to you is broken</li>
-                    <li>Where a road narrows.</li>
-                </ul>
-            <!-- </article> -->
-        </div>
-    </div>
-    <div class="container" id="text">
-      <div class="secondContent">
+    <div class="container" id="secondContent">
         <header>
             <h1>Breakdown Safety Rules</h1>
         </header>
-        <article>
             <h3>If your vehicle breaks down</h3>
             <p>If your vehicle breaks down and you require roadside assistance, there are steps you can take to keep yourself safe and minimise the risk for others:</p>
             <ul>
@@ -89,16 +86,12 @@
                 <li>If you need to change a flat tyre or check under the bonnet of your car, remain aware of other cars driving past. If it's not safe, call for roadside assistance.</li>
                 <li>Use of portable warning triangles in vehicles over 12 tonnes. If the triangles are not properly placed, the driver could face prosecution and would be held liable for any crash that results from a failure to comply with these requirements.</li>
             </ul>
-        </article>
-      </div>
-    </div>
-    <!-- <div class="container">
-      <div class="seatBeltContent">
+</div>
 
+    <div class="container" id="thirdContent">
         <header>
             <h1>Seatbelt</h1>
         </header>
-        <article>
             <h2>Seatbelts and Child Restraints</h2>
             <p></p>
             <ul>
@@ -121,15 +114,12 @@
                 <li>Wear your seatbelt comfortably and correctly with the lap part of your seatbelt worn as low as possible, positioned below your baby.
                   It should be over the upper thighs and across the pelvis. The sash part of your seatbelt should pass above
                   the stomach and across the centre of your chest.</li>
-        </article>
-      </div>
     </div>
-    <div class="container">
-      <div class="robotsContent">
+
+    <div class="container" id="fourthContent">
       <header>
         <h1>Traffic Lights Rules</h1>
       </header>
-      <article>
           <h2>Traffic lights</h2>
           <img src="images/traffic-light-green.jpg" alt="">
           Green means proceed through the intersection carefully.<br>
@@ -151,15 +141,13 @@
           <img src="images/turning-arrow-light1.jpg" alt="">
           When the yellow (amber) arrow is flashing, you may proceed but you must give way
           to any pedestrian who is crossing the road into which you are turning.<br>
-          </article>
-        </div>
   </div>
-  <div class="container">
-    <div class="wetRoadContent">
+
+
+  <div class="container" id="fifthContent">
     <header>
       <h1>Slippery Road</h1>
     </header>
-    <article>
       <h3>Vehicle Fitness and Driving in Bad Weather</h3>
       <p>The safe driver will be well aware of the need to have a vehicle best equipped to drive safely
          in bad weather and not break down!</p>
@@ -181,9 +169,36 @@
         <li>Look out for signs warning of adverse conditions
            including fixed signs, such as those warning of exposure to high-winds.</li>
       </ul>
-        </article>
-      </div>
-</div> -->
+</div>
+<div class="container" id="sixthContent">
+  <header>
+    <h1>Road Work</h1>
+  </header>
+<h3>Road Safety for drivers/motorists at construction zones/ road works</h3>
+<p>Before embarking on the road to the
+  construction zone it is advised to schedule enough time to drive safely and
+  to check the radio or internet websites for traffic information.
+  Expect delays and leave early so you can reach your destination on time.</p>
+<p>Safety professionals recommend several precautions to help make construction zones safer for everyone:</p>
+<ul>
+  <li>When approaching a construction/maintenance situation exercise caution and slow down. </li>
+  <li>Observe warning and caution signs before entering a construction zone. </li>
+  <li>Observe these posted signs until you see the one that says you've left the work zone.</li>
+  <li>Turn on your lights to make your vehicle more visible.</li>
+  <li>Expecting the unexpected is a golden rule when travelling through construction zones.</li>
+  <li>Always be aware that vehicles ahead of you may stop unexpectedly. </li>
+  <li>Stay alert for aggressive drivers. If another motorist is aggressively jockeying for position,
+    drivers should let them move on. Challenging another
+    driver encourages road rage and endangers the safety0 of other motorists and workers in the area.</li>
+    <li>Avoid distracting activities. Remaining alert for unexpected hazards is
+      critical when travelling through construction zones. </li>
+    <li>Watch for construction equipment and workers. Construction equipment entering and exiting a work zone without warning, equipment
+      extending into traffic, and construction crews and flaggers
+      working dangerously close to moving traffic are a few of the hazards to expect.</li>
+    <li>Be patient, cautious, and courteous. Remember, the work zone crew
+      members are working to improve the road and make your future drive better.</li>
+</ul>
+</div>
 
     <script src="my_screen.js" charset="utf-8"></script>
 </body>
