@@ -27,9 +27,9 @@ var display = document.getElementById('display');
 var displayInfo = document.getElementById('displayInfo');
 var options = document.querySelector('.options');
 var container = document.querySelector('.hide_content');
-var secondContent = document.querySelector('.secondContent');
+var secondContent = document.getElementById('secondContent');
 
-console.log(container);
+// console.log(container);
 
 (function() {
     var results = complideRadios({
@@ -58,23 +58,82 @@ options.addEventListener('click', function() {
     document.getElementById("displayInfo").style.display = "block"
 });
 
-var images = document.querySelector('.image')
+var images = document.querySelector('.image');
+var secImage = document.querySelector('.image2');
+var thirdImage = document.querySelector('.image3');
+var forthImage = document.querySelector('.image4');
+var fifthImage = document.querySelector('.image5');
+var sixthImage = document.querySelector('.image6');
+var seventhImage = document.querySelector('.image7');
+var eighthImage = document.querySelector('.image8');
 // console.log(images);
 
 images.addEventListener('click',  function(){
-  //console.log(images.dataset.pictureId);
-  if (images.dataset.pictureId == 'overTake') {
-    container.classList.remove('hide_content');
-  }
+  console.log(images.dataset.pictureId);
 
-  else if(images.dataset.pictureId == 'breakDown') {
-    secondContent.classList.remove('secondContent');
-  }
+  if (images.dataset.pictureId == 'overTake') {
+    // container.classList.remove('hide_content');
+  $( "#firstContent").dialog({
+  width: 1000,
+  height: 700
+});
+}
 })
 
+secImage.addEventListener('click',  function(){
+console.log(secImage.dataset.pictureId);
 
+ if(secImage.dataset.pictureId == 'breakDown') {
+    $( "#secondContent").dialog({
+    width: 1000,
+    height: 700
+  });
+}
+})
 
+thirdImage.addEventListener('click',  function(){
+console.log(thirdImage.dataset.pictureId);
 
+ if(thirdImage.dataset.pictureId == 'seatBelt') {
+    $( "#thirdContent").dialog({
+    width: 1000,
+    height: 700
+  });
+}
+})
+
+forthImage.addEventListener('click',  function(){
+console.log(forthImage.dataset.pictureId);
+
+ if(forthImage.dataset.pictureId == 'trafficLight') {
+    $( "#fourthContent").dialog({
+    width: 1000,
+    height: 700
+  });
+}
+})
+
+fifthImage.addEventListener('click',  function(){
+console.log(fifthImage.dataset.pictureId);
+
+ if(fifthImage.dataset.pictureId == 'slippery') {
+    $( "#fifthContent").dialog({
+    width: 1000,
+    height: 700
+  });
+}
+})
+
+sixthImage.addEventListener('click',  function(){
+console.log(sixthImage.dataset.pictureId);
+
+ if(sixthImage.dataset.pictureId == 'roadWork') {
+    $( "#sixthContent").dialog({
+    width: 1000,
+    height: 700
+  });
+}
+})
 
 
 
