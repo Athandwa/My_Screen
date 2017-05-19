@@ -135,58 +135,24 @@ console.log(sixthImage.dataset.pictureId);
 }
 })
 
+seventhImage.addEventListener('click',  function(){
+console.log(seventhImage.dataset.pictureId);
 
+ if(seventhImage.dataset.pictureId == 'speedLimit') {
+    $( "#seventhContent").dialog({
+    width: 1000,
+    height: 700
+  });
+}
+})
 
+eighthImage.addEventListener('click',  function(){
+console.log(eighthImage.dataset.pictureId);
 
-
-
-
-
-
-
-
-
-
-// var secondContent = document.querySelector('.secondContent');
-// var seatBeltContent = document.querySelector('.seatBeltContent');
-// var robotsContent = document.querySelector('.robotsContent');
-//console.log(container);
-
-// container.classList.add('hide_content');
-// secondContent.classList.add('hide_content');
-// seatBeltContent.classList.add('hide_content');
-// robotsContent.classList.add('hide_content');
-// if (images.dataset.pictureId == 'overTake') {
-//   container.classList.remove('overTaking');
-// }
-// else if (images.dataset.pictureId == 'breakDown') {
-//     secondContent.classList.remove('secondContent');
-// }
-//   else if (images.dataset.pictureId == 'seatBelt') {
-//     seatBeltContent.classList.remove('seatBeltContent');
-//   }
-//   else if (images.dataset.pictureId == 'trafficLight') {
-//     robotsContent.classList.remove('robotsContent');
-//   }
-//   // else if (images.dataset.pictureId == 'seatBelt') {
-//   //   robotsContent.classList.remove('robotsContent');
-//   // }
-
-
-
-
-
-// if (images.dataset.pictureId == 'overTake') {
-//   container.classList.add('show_content');
-//   secondContent.classList.add('hide_content');
-//   seatBeltContent.classList.add('hide_content');
-//   robotsContent.classList.add('hide_content');
-// }
-// else if (images.dataset.pictureId == 'breakDown') {
-//
-//   container.classList.add('hide_content');
-//   secondContent.classList.add('show_content');
-//   seatBeltContent.classList.add('hide_content');
-//   robotsContent.classList.add('hide_content');
-//
-// }
+ if(eighthImage.dataset.pictureId == 'crossings') {
+    $( "#eighthContent").dialog({
+    width: 1000,
+    height: 700
+  });
+}
+})
