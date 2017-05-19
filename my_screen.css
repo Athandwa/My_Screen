@@ -4,62 +4,50 @@ div.container {
     margin-left: 2px;
     margin-right: 2px;
 }
-#firstContent {
-display: none;
- }
 
- div#content.container ul p{
+div#content.container ul p {
     margin-left: 20px;
- }
-
-#secondContent{
-  display: none;
 }
 
-#thirdContent{
-  display: none;
+#secondContent {
+    display: none;
 }
 
-#fourthContent{
-  display: none;
+#thirdContent {
+    display: none;
 }
 
-#fifthContent{
-  display: none;
-}
-#sixthContent{
-  display: none;
+#fourthContent {
+    display: none;
 }
 
-
- /*.show_content {
-   display: block;
- }*/
-/*.hidden_content{
-  display: none;
+#fifthContent {
+    display: none;
 }
-.seatBeltContent{
-  display: none;
-}
-.robotsContent{
-  display: none;
-}
-.wetRoadContent{
-  display: none;
-}*/
 
+#sixthContent {
+    display: none;
+}
 
-h1{
-  text-align: center;
-  font-style: italic;
-  text-shadow: 0.1em 0.1em 0.15em #333;
-  font-size: 3em;
+#seventhContent {
+    display: none;
+}
+
+#eighthContent {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0.1em 0.1em 0.15em #333;
+    font-size: 3em;
 }
 
 header, footer {
     padding: 1em;
     color: white;
-    background-color: Crimson ;
+    background-color: Crimson;
     clear: left;
     text-align: center;
 }
@@ -87,29 +75,30 @@ article {
     overflow: scroll;
     height: 560px;
 }
-h2{
-  padding: 1em;
-  color: white;
-  background-color: powderblue;
-  clear: left;
-  text-align: center;
-  font-style: italic;
+
+h2 {
+    padding: 1em;
+    color: white;
+    background-color: powderblue;
+    clear: left;
+    text-align: center;
+    font-style: italic;
 }
 
-#displayInfo{
-  margin-top: 30px;
-  width: 170px;
-  height: 170px;
-  background-color: yellow;
-  box-shadow: 10px 10px 5px #888888;
-  font-style: italic;
-  display:none;
-  /*transition-timing-function: ease-in;
+#displayInfo {
+    margin-top: 30px;
+    width: 170px;
+    height: 170px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px #888888;
+    font-style: italic;
+    display: none;
+    /*transition-timing-function: ease-in;
 transition: 0.2s;
 transform: translateY(130%);*/
-
-  /*font-weight: bold;*/
+    /*font-weight: bold;*/
 }
-img{
-  cursor: pointer;
+
+img {
+    cursor: pointer;
 }
