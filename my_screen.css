@@ -8,6 +8,9 @@ div.container {
 div#content.container ul p {
     margin-left: 20px;
 }
+#firstContent{
+  display: none;
+}
 
 #secondContent {
     display: none;
