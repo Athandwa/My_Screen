@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="my_screen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-    <link rel="stylesheet" href="./Jquery/jquery-ui-themes-1.12.1/jquery-ui.min.css">.
+    <link rel="stylesheet" href="./Jquery/jquery-ui-themes-1.12.1/jquery-ui.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -14,15 +16,13 @@
         </header>
         <nav>
             <script type="text/x-handlebars-tamplate" class="RadioTamplate">
-            <h3>Road & Traffics Safety Tips</h3>
-                {{#each options}}
-                <input type="radio" name="tips" value="{{this.tipValue}}">{{tip}}<br>
-                {{/each}}
+                <h3>Road & Traffics Safety Tips</h3> {{#each options}}
+                <input type="radio" name="tips" value="{{this.tipValue}}">{{tip}}<br> {{/each}}
             </script>
             <div id='display'>
-              <div class="options">
+                <div class="options">
 
-              </div>
+                </div>
             </div>
 
             <div id="displayInfo"></div>
@@ -31,39 +31,39 @@
             <h2>Road & Traffic Rules</h2>
             <center>
                 <div class="images">
-                  <img src="images/image1.jpg" data-picture-id="overTake" alt="image1.jpg" class="image" style="width:250px;height:200px;">
-                  <img src="images/image2.jpg" data-picture-id="breakDown" alt="image2.jpg" class="image2" style="width:250px;height:200px;">
-                  <img src="images/image3.jpeg" data-picture-id="seatBelt" alt="image3.jpeg" class="image3" style="width:250px;height:200px;">
-                  <img src="images/image4.jpeg" data-picture-id="trafficLight" alt="image4.jpeg" class="image4" style="width:250px;height:200px;">
-                  <img src="images/image5.png" data-picture-id="slippery" alt="image5.png" class="image5" style="width:250px;height:200px;">
-                  <img src="images/image6.jpeg" data-picture-id="roadWork" alt="image6.jpeg" class="image6" style="width:250px;height:200px;">
-                  <img src="images/image7.png" data-picture-id="speedLimit" alt="image7.png" class="image7" style="width:250px;height:200px;">
-                  <img src="images/image8.png" data-picture-id="crossings" alt="image5.png" class="image8" style="width:250px;height:200px;">
+                    <img src="images/image1.jpg" data-picture-id="overTake" alt="image1.jpg" class="image" style="width:250px;height:200px;">
+                    <img src="images/image2.jpg" data-picture-id="breakDown" alt="image2.jpg" class="image2" style="width:250px;height:200px;">
+                    <img src="images/image3.jpeg" data-picture-id="seatBelt" alt="image3.jpeg" class="image3" style="width:250px;height:200px;">
+                    <img src="images/image4.jpeg" data-picture-id="trafficLight" alt="image4.jpeg" class="image4" style="width:250px;height:200px;">
+                    <img src="images/image5.png" data-picture-id="slippery" alt="image5.png" class="image5" style="width:250px;height:200px;">
+                    <img src="images/image6.jpeg" data-picture-id="roadWork" alt="image6.jpeg" class="image6" style="width:250px;height:200px;">
+                    <img src="images/image7.png" data-picture-id="speedLimit" alt="image7.png" class="image7" style="width:250px;height:200px;">
+                    <img src="images/image8.png" data-picture-id="crossings" alt="image5.png" class="image8" style="width:250px;height:200px;">
                 </div>
             </center>
         </article>
         <div class="container" id="firstContent">
             <header>
-              <h1>Overtaking Rules</h1>
+                <h1>Overtaking Rules</h1>
             </header>
             <p>Overtaking other vehicles can be dangerous. The difficulty with overtaking is judging the space required to complete the manoeuvre safely.</p>
             <p>You must overtake on the right unless a vehicle is waiting to turn right, is stationary, or if you and the other vehicle are travelling in marked lanes. In these instances you may overtake on the left side if it is safe.</p>
             <h3>When overtaking you must:</h3>
             <ul>
-              <li>Not go over the speed limit</li>
-              <li>Make sure the road ahead is clear and that there is sufficient space for you to complete the manoeuvre (check side streets and other lanes to ensure nothing will enter this space while you are overtaking)</li>
-              <li>Check mirrors</li>
-              <li>Signal each change in position long enough to give sufficient warning to others</li>
-              <li>Check blind spots for motorcycles and other vehicles before changing your lane position</li>
-              <li>Pass the vehicle with sufficient space to avoid a collision (you should be able to see the vehicle you have overtaken in your rear vision mirror before you move in front of it)</li>
-              <li>Give way to traffic already in the lane you are moving to.</li>
+                <li>Not go over the speed limit</li>
+                <li>Make sure the road ahead is clear and that there is sufficient space for you to complete the manoeuvre (check side streets and other lanes to ensure nothing will enter this space while you are overtaking)</li>
+                <li>Check mirrors</li>
+                <li>Signal each change in position long enough to give sufficient warning to others</li>
+                <li>Check blind spots for motorcycles and other vehicles before changing your lane position</li>
+                <li>Pass the vehicle with sufficient space to avoid a collision (you should be able to see the vehicle you have overtaken in your rear vision mirror before you move in front of it)</li>
+                <li>Give way to traffic already in the lane you are moving to.</li>
             </ul>
             <h3>You must not overtake:</h3>
             <ul>
-              <li>Unless you have a clear view of any approaching traffic and you can complete the manoeuvre safely (do not commence an overtaking manoeuvre when approaching a crest, curve or any limited vision situation)</li>
-              <li>Another vehicle that is stopping or has stopped at a pedestrian crossing, intersection or railway crossing</li>
-              <li>Across an unbroken (continuous) line, unless the line closest to you is broken</li>
-              <li>Where a road narrows.</li>
+                <li>Unless you have a clear view of any approaching traffic and you can complete the manoeuvre safely (do not commence an overtaking manoeuvre when approaching a crest, curve or any limited vision situation)</li>
+                <li>Another vehicle that is stopping or has stopped at a pedestrian crossing, intersection or railway crossing</li>
+                <li>Across an unbroken (continuous) line, unless the line closest to you is broken</li>
+                <li>Where a road narrows.</li>
             </ul>
         </div>
         <footer>Copyright &copy; lakhiwe@codeX.co</footer>
@@ -72,189 +72,151 @@
         <header>
             <h1>Breakdown Safety Rules</h1>
         </header>
-            <h3>If your vehicle breaks down</h3>
-            <p>If your vehicle breaks down and you require roadside assistance, there are steps you can take to keep yourself safe and minimise the risk for others:</p>
-            <ul>
-                <li>Be vigilant, it is often difficult for other vehicles to stop in a hurry so assess the area for risks and hazards.</li>
-                <li>Find a safe spot to pull over. Park the car as far left as possible.</li>
-                <li>Make sure you can be seen. Turn on your hazard lights. Turn on your parking lights in poor light, or raise your bonnet.</li>
-                <li>If it's safe to leave the car, try to exit from the left passenger side. Move to the far left of the road, away from your car and behind a safety barrier if possible while waiting for help.</li>
-                <li>If you need to change a flat tyre or check under the bonnet of your car, remain aware of other cars driving past. If it's not safe, call for roadside assistance.</li>
-                <li>Use of portable warning triangles in vehicles over 12 tonnes. If the triangles are not properly placed, the driver could face prosecution and would be held liable for any crash that results from a failure to comply with these requirements.</li>
-            </ul>
-</div>
+        <h3>If your vehicle breaks down</h3>
+        <p>If your vehicle breaks down and you require roadside assistance, there are steps you can take to keep yourself safe and minimise the risk for others:</p>
+        <ul>
+            <li>Be vigilant, it is often difficult for other vehicles to stop in a hurry so assess the area for risks and hazards.</li>
+            <li>Find a safe spot to pull over. Park the car as far left as possible.</li>
+            <li>Make sure you can be seen. Turn on your hazard lights. Turn on your parking lights in poor light, or raise your bonnet.</li>
+            <li>If it's safe to leave the car, try to exit from the left passenger side. Move to the far left of the road, away from your car and behind a safety barrier if possible while waiting for help.</li>
+            <li>If you need to change a flat tyre or check under the bonnet of your car, remain aware of other cars driving past. If it's not safe, call for roadside assistance.</li>
+            <li>Use of portable warning triangles in vehicles over 12 tonnes. If the triangles are not properly placed, the driver could face prosecution and would be held liable for any crash that results from a failure to comply with these requirements.</li>
+        </ul>
+    </div>
 
     <div class="container" id="thirdContent">
         <header>
             <h1>Seatbelt</h1>
         </header>
-            <h2>Seatbelts and Child Restraints</h2>
-            <ul>
-                <li>Wearing a seatbelt can be a life or death decision both for you and your passengers, even if you are only travelling a few kilometres because most road crashes happen close to home.</li>
-                <li>Wearing a seatbelt when travelling at 40 kilometres is just as important as wearing a seatbelt at faster speeds. Crash impact at 40km/h is like falling from a two storey building onto concrete.</li>
-                <li>Passengers not wearing seatbelts can kill or seriously injure others in the car if, for example, the driver has to brake suddenly.</li>
-            </ul>
-            <h3>Child Restrains</h3>
-            <ul>
-            <li>When travelling in a motor vehicle in South Australia, all children under
-              16 years of age must be restrained in a suitable approved restraint that is properly adjusted and fastened.</li>
-            <li>The law is specific about what type of restraint is to be used at different ages and where children must
-              be seated in a vehicle. The aim of these laws is to reduce the risk of injury caused by restraints that are unsuitable for a child's size.</li>
-            <li>The driver is responsible for ensuring all passengers are correctly restrained. Penalties include
-              expiation fees and demerit points.</li>
-            </ul>
-            <h2>Seatbelt laws</h2>
-            <ul>
-                <li>Drivers must ensure that they and any passengers in the vehicle are wearing a seatbelt or approved child restraint. Penalties include demerit points and fines.</li>
-                <li>Passengers aged 16 years or older also commit an offence if they do not wear a seatbelt when one is available.</li>
-                <li>Seatbelts do not have to be worn if you are carrying a letter from your doctor have a stating that you do not have to wear a seatbelt on the ground of physical disability or any medical ground. The letter must be carried with you whenever
-                    travelling in a vehicle, or a seatbelt must be worn.</li>
-            </ul>
-            <h3>Pregnancy</h3>
-            <ul>
-                <li>This will protect you and your unborn baby in the event of a crash. No matter what stage of your pregnancy, it is vital that you always wear a seatbelt.
-                </li>
-                <li>Wear your seatbelt comfortably and correctly with the lap part of your seatbelt worn as low as possible, positioned below your baby.
-                  It should be over the upper thighs and across the pelvis. The sash part of your seatbelt should pass above
-                  the stomach and across the centre of your chest.</li>
+        <h2>Seatbelts and Child Restraints</h2>
+        <ul>
+            <li>Wearing a seatbelt can be a life or death decision both for you and your passengers, even if you are only travelling a few kilometres because most road crashes happen close to home.</li>
+            <li>Wearing a seatbelt when travelling at 40 kilometres is just as important as wearing a seatbelt at faster speeds. Crash impact at 40km/h is like falling from a two storey building onto concrete.</li>
+            <li>Passengers not wearing seatbelts can kill or seriously injure others in the car if, for example, the driver has to brake suddenly.</li>
+        </ul>
+        <h3>Child Restrains</h3>
+        <ul>
+            <li>When travelling in a motor vehicle in South Australia, all children under 16 years of age must be restrained in a suitable approved restraint that is properly adjusted and fastened.</li>
+            <li>The law is specific about what type of restraint is to be used at different ages and where children must be seated in a vehicle. The aim of these laws is to reduce the risk of injury caused by restraints that are unsuitable for a child's size.</li>
+            <li>The driver is responsible for ensuring all passengers are correctly restrained. Penalties include expiation fees and demerit points.</li>
+        </ul>
+        <h2>Seatbelt laws</h2>
+        <ul>
+            <li>Drivers must ensure that they and any passengers in the vehicle are wearing a seatbelt or approved child restraint. Penalties include demerit points and fines.</li>
+            <li>Passengers aged 16 years or older also commit an offence if they do not wear a seatbelt when one is available.</li>
+            <li>Seatbelts do not have to be worn if you are carrying a letter from your doctor have a stating that you do not have to wear a seatbelt on the ground of physical disability or any medical ground. The letter must be carried with you whenever
+                travelling in a vehicle, or a seatbelt must be worn.</li>
+        </ul>
+        <h3>Pregnancy</h3>
+        <ul>
+            <li>This will protect you and your unborn baby in the event of a crash. No matter what stage of your pregnancy, it is vital that you always wear a seatbelt.
+            </li>
+            <li>Wear your seatbelt comfortably and correctly with the lap part of your seatbelt worn as low as possible, positioned below your baby. It should be over the upper thighs and across the pelvis. The sash part of your seatbelt should pass above
+                the stomach and across the centre of your chest.</li>
     </div>
 
     <div class="container" id="fourthContent">
-      <header>
-        <h1>Traffic Lights Rules</h1>
-      </header>
-          <h2>Traffic lights</h2>
-          <img src="images/traffic-light-green.jpg" alt="">
-          Green means proceed through the intersection carefully.<br>
-          <img src="images/traffic-light-yellow.jpg" alt="">
-          Yellow (amber) means stop. You can enter the intersection if you are so close that sudden braking might cause a crash.<br>
-          <img src="images/traffic-light-red.jpg" alt="">
-          Do not go through the intersection.<br>
-          <h3>Turning arrows at traffic lights</h3>
-          <ul>
+        <header>
+            <h1>Traffic Lights Rules</h1>
+        </header>
+        <h2>Traffic lights</h2>
+        <img src="images/traffic-light-green.jpg" alt=""> Green means proceed through the intersection carefully.<br>
+        <img src="images/traffic-light-yellow.jpg" alt=""> Yellow (amber) means stop. You can enter the intersection if you are so close that sudden braking might cause a crash.<br>
+        <img src="images/traffic-light-red.jpg" alt=""> Do not go through the intersection.<br>
+        <h3>Turning arrows at traffic lights</h3>
+        <ul>
             <li>Some traffic lights have arrows to control traffic turning right or left.</li>
             <li>A green arrow means you can only turn in that direction.</li>
-            <li>A red arrow means traffic waiting to turn must wait behind the stop
-              line until the arrow turns green or disappears, even if there is no traffic on the road.</li>
-          </ul>
-          <img src="images/turning-arrow-light1.jpg" alt="">
-          You must not go straight ahead or turn left. You may turn right.<br>
-          <img src="images/turning-arrow-light1.jpg" alt="">
-          You must not turn right but you can go straight ahead or turn left if the way is clear.<br>
-          <img src="images/turning-arrow-light1.jpg" alt="">
-          When the yellow (amber) arrow is flashing, you may proceed but you must give way
-          to any pedestrian who is crossing the road into which you are turning.<br>
-  </div>
+            <li>A red arrow means traffic waiting to turn must wait behind the stop line until the arrow turns green or disappears, even if there is no traffic on the road.</li>
+        </ul>
+        <img src="images/turning-arrow-light1.jpg" alt=""> You must not go straight ahead or turn left. You may turn right.<br>
+        <img src="images/turning-arrow-light1.jpg" alt=""> You must not turn right but you can go straight ahead or turn left if the way is clear.<br>
+        <img src="images/turning-arrow-light1.jpg" alt=""> When the yellow (amber) arrow is flashing, you may proceed but you must give way to any pedestrian who is crossing the road into which you are turning.<br>
+    </div>
 
 
-  <div class="container" id="fifthContent">
-    <header>
-      <h1>Slippery Road</h1>
-    </header>
-      <h3>Vehicle Fitness and Driving in Bad Weather</h3>
-      <p>The safe driver will be well aware of the need to have a vehicle best equipped to drive safely
-         in bad weather and not break down!</p>
-      <p>We would advise a complete pre-trip inspection with a focus on the following:</p>
-      <ul>
-        <li>Do a visual, hands-on inspection and check all important items, including tyres, wiper blades, fluid and lights.</li>
-        <li>Check that wiper blades are not worn and are capable of clearing the windscreen correctly.</li>
-        <li>When it's your safety, your family's safety, and the
-          safety of others on the line the cost to purchase a decent set of windshield wipers is a small price to pay.</li>
-        <li>Don’t forget to check the spare tyre.</li>
-        <li>Tyre tread is very important especially on
-          slippery roads allowing you to slow down and stop suddenly should the need arise.</li>
-        <li>Guard against <mark>over</mark> and <mark>under</mark> inflated tyres and potential loss in traction.</li>
-        <li>Check the battery, antifreeze, windshield wiper fluid and headlights.</li>
-        <li>Ensure that lights are clean and number plates are clearly visible and legible.</li>
-        <li>Check that mirrors are clear and the windows are demisted thoroughly.</li>
-        <li>Listen and obey national
-          and local radio/TV announcements and warnings regarding road and weather conditions for your journey.</li>
-        <li>Look out for signs warning of adverse conditions
-           including fixed signs, such as those warning of exposure to high-winds.</li>
-      </ul>
-</div>
-<div class="container" id="sixthContent">
-  <header>
-    <h1>Road Work</h1>
-  </header>
-<h3>Road Safety for drivers/motorists at construction zones/ road works</h3>
-<p>Before embarking on the road to the
-  construction zone it is advised to schedule enough time to drive safely and
-  to check the radio or internet websites for traffic information.
-  Expect delays and leave early so you can reach your destination on time.</p>
-<p>Safety professionals recommend several precautions to help make construction zones safer for everyone:</p>
-<ul>
-  <li>When approaching a construction/maintenance situation exercise caution and slow down. </li>
-  <li>Observe warning and caution signs before entering a construction zone. </li>
-  <li>Observe these posted signs until you see the one that says you've left the work zone.</li>
-  <li>Turn on your lights to make your vehicle more visible.</li>
-  <li>Expecting the unexpected is a golden rule when travelling through construction zones.</li>
-  <li>Always be aware that vehicles ahead of you may stop unexpectedly. </li>
-  <li>Stay alert for aggressive drivers. If another motorist is aggressively jockeying for position,
-    drivers should let them move on. Challenging another
-    driver encourages road rage and endangers the safety0 of other motorists and workers in the area.</li>
-    <li>Avoid distracting activities. Remaining alert for unexpected hazards is
-      critical when travelling through construction zones. </li>
-    <li>Watch for construction equipment and workers. Construction equipment entering and exiting a work zone without warning, equipment
-      extending into traffic, and construction crews and flaggers
-      working dangerously close to moving traffic are a few of the hazards to expect.</li>
-    <li>Be patient, cautious, and courteous. Remember, the work zone crew
-      members are working to improve the road and make your future drive better.</li>
-</ul>
-</div>
-<div class="container" id="seventhContent">
-  <header>
-    <h1>Speed Limit</h1>
-  </header>
-    <h2>Speed Limits And The Law</h2>
-      <h3>Speed Limits and the Lawspeeds</h3>
-      <ul>
-        <li>60 km/h on a public road within an urban area</li>
-        <li>100 km/h on public road outside an urban area which is not a freeway; and</li>
-        <li>120 km/h on every freeway.</li>
-      </ul>
-      <p>A maximum speed limit of 80 km/h for a goods vehicle with a GVM exceeding 9t, a combination vehicle consisting of a goods vehicle
-        (i.e. drawing vehicle and one or two trailers) of which the sum of the
-         GVM of the goods vehicle and of the trailer(s) exceeds 9t
-         and an articulated vehicle of which the GCM exceeds 9t.</p>
-         <p>Provision is also made that certain vehicles (minibuses, buses and goods vehicles) shall not exceed the speed limits
-           imposed on tyres by SABS 1550 or as approved by the manufacturer of such tyres.</p>
-         <p>Certain tractors and trailers or combination vehicles may also
-           not exceed speed limits of 35 km/h and 15 km/h based on their braking capabilities.</p>
-         <p>Road traffic signs can also prescribe speed limits
-           which may be lower or higher than the general limits applicable on a public road.</p>
-</div>
+    <div class="container" id="fifthContent">
+        <header>
+            <h1>Slippery Road</h1>
+        </header>
+        <h3>Vehicle Fitness and Driving in Bad Weather</h3>
+        <p>The safe driver will be well aware of the need to have a vehicle best equipped to drive safely in bad weather and not break down!</p>
+        <p>We would advise a complete pre-trip inspection with a focus on the following:</p>
+        <ul>
+            <li>Do a visual, hands-on inspection and check all important items, including tyres, wiper blades, fluid and lights.</li>
+            <li>Check that wiper blades are not worn and are capable of clearing the windscreen correctly.</li>
+            <li>When it's your safety, your family's safety, and the safety of others on the line the cost to purchase a decent set of windshield wipers is a small price to pay.</li>
+            <li>Don’t forget to check the spare tyre.</li>
+            <li>Tyre tread is very important especially on slippery roads allowing you to slow down and stop suddenly should the need arise.</li>
+            <li>Guard against <mark>over</mark> and <mark>under</mark> inflated tyres and potential loss in traction.</li>
+            <li>Check the battery, antifreeze, windshield wiper fluid and headlights.</li>
+            <li>Ensure that lights are clean and number plates are clearly visible and legible.</li>
+            <li>Check that mirrors are clear and the windows are demisted thoroughly.</li>
+            <li>Listen and obey national and local radio/TV announcements and warnings regarding road and weather conditions for your journey.</li>
+            <li>Look out for signs warning of adverse conditions including fixed signs, such as those warning of exposure to high-winds.</li>
+        </ul>
+    </div>
+    <div class="container" id="sixthContent">
+        <header>
+            <h1>Road Work</h1>
+        </header>
+        <h3>Road Safety for drivers/motorists at construction zones/ road works</h3>
+        <p>Before embarking on the road to the construction zone it is advised to schedule enough time to drive safely and to check the radio or internet websites for traffic information. Expect delays and leave early so you can reach your destination on
+            time.
+        </p>
+        <p>Safety professionals recommend several precautions to help make construction zones safer for everyone:</p>
+        <ul>
+            <li>When approaching a construction/maintenance situation exercise caution and slow down. </li>
+            <li>Observe warning and caution signs before entering a construction zone. </li>
+            <li>Observe these posted signs until you see the one that says you've left the work zone.</li>
+            <li>Turn on your lights to make your vehicle more visible.</li>
+            <li>Expecting the unexpected is a golden rule when travelling through construction zones.</li>
+            <li>Always be aware that vehicles ahead of you may stop unexpectedly. </li>
+            <li>Stay alert for aggressive drivers. If another motorist is aggressively jockeying for position, drivers should let them move on. Challenging another driver encourages road rage and endangers the safety0 of other motorists and workers in the
+                area.
+            </li>
+            <li>Avoid distracting activities. Remaining alert for unexpected hazards is critical when travelling through construction zones. </li>
+            <li>Watch for construction equipment and workers. Construction equipment entering and exiting a work zone without warning, equipment extending into traffic, and construction crews and flaggers working dangerously close to moving traffic are a
+                few of the hazards to expect.</li>
+            <li>Be patient, cautious, and courteous. Remember, the work zone crew members are working to improve the road and make your future drive better.</li>
+        </ul>
+    </div>
+    <div class="container" id="seventhContent">
+        <header>
+            <h1>Speed Limit</h1>
+        </header>
+        <h2>Speed Limits And The Law</h2>
+        <h3>Speed Limits and the Lawspeeds</h3>
+        <ul>
+            <li>60 km/h on a public road within an urban area</li>
+            <li>100 km/h on public road outside an urban area which is not a freeway; and</li>
+            <li>120 km/h on every freeway.</li>
+        </ul>
+        <p>A maximum speed limit of 80 km/h for a goods vehicle with a GVM exceeding 9t, a combination vehicle consisting of a goods vehicle (i.e. drawing vehicle and one or two trailers) of which the sum of the GVM of the goods vehicle and of the trailer(s)
+            exceeds 9t and an articulated vehicle of which the GCM exceeds 9t.</p>
+        <p>Provision is also made that certain vehicles (minibuses, buses and goods vehicles) shall not exceed the speed limits imposed on tyres by SABS 1550 or as approved by the manufacturer of such tyres.</p>
+        <p>Certain tractors and trailers or combination vehicles may also not exceed speed limits of 35 km/h and 15 km/h based on their braking capabilities.</p>
+        <p>Road traffic signs can also prescribe speed limits which may be lower or higher than the general limits applicable on a public road.</p>
+    </div>
 
-<div class="container" id="eighthContent">
-  <header>
-    <h1>Pedestrians Crossing Rules</h1>
-  </header>
-    <h2>Duties of Pedestrians When Crossing The Roads</h2>
-    <p>Pedestrian crossings allow people to cross the road safely. These crossings are usually marked by white stripes on the road and are also known as zebra crossings.
-      Some pedestrian crossings have zig zag lines marked on the road before the crossing.
-      Take extra care when you see a zig zag line on the road as this means you are approaching a crossing
-      which you may not be able to see because of a curve, crest or dip in the road.</p>
-    <ul>
-      <li>Whenever a sidewalk or footpath abuts on the roadway of a public road,
-         a pedestrian shall not walk on such roadway except for the
-        purpose of crossing from one side of such roadway to the other or for
-        some other sufficient reason.</li>
-      <li>A pedestrian on a public road which has no sidewalk or footpath abutting on
-         the roadway, shall walk as near as is practicable to the edge of the roadway
-          on his or her right-hand side so as to face oncoming traffic on such roadway,
-         except where the presence of pedestrians on the roadway is prohibited by a prescribed road traffic sign.</li>
-      <li>No pedestrian shall cross a public road without satisfying himself or herself that
-         the roadway is sufficiently free from oncoming traffic to permit him or her to cross the road in safety.</li>
-      <li>A pedestrian, when crossing a public road by means of a pedestrian crossing or in any other manner,
-      shall not linger on such road but shall proceed with due despatch.</li>
-      <li>No pedestrian on a public road shall conduct himself or herself in such a manner as to or as is likely to
-        constitute a source of danger to himself or herself or to other traffic which is or may be on such road.</li>
-      <li>A pedestrian may cross a public road only at a pedestrian crossing or an intersection
-         or at a distance further than 50 metres from such pedestrian crossing or intersection.</li>
-    </ul>
-</div>
-
-    <script src="my_screen.js" charset="utf-8"></script>
+    <div class="container" id="eighthContent">
+        <header>
+            <h1>Pedestrians Crossing Rules</h1>
+        </header>
+        <h2>Duties of Pedestrians When Crossing The Roads</h2>
+        <p>Pedestrian crossings allow people to cross the road safely. These crossings are usually marked by white stripes on the road and are also known as zebra crossings. Some pedestrian crossings have zig zag lines marked on the road before the crossing.
+            Take extra care when you see a zig zag line on the road as this means you are approaching a crossing which you may not be able to see because of a curve, crest or dip in the road.</p>
+        <ul>
+            <li>Whenever a sidewalk or footpath abuts on the roadway of a public road, a pedestrian shall not walk on such roadway except for the purpose of crossing from one side of such roadway to the other or for some other sufficient reason.</li>
+            <li>A pedestrian on a public road which has no sidewalk or footpath abutting on the roadway, shall walk as near as is practicable to the edge of the roadway on his or her right-hand side so as to face oncoming traffic on such roadway, except where
+                the presence of pedestrians on the roadway is prohibited by a prescribed road traffic sign.</li>
+            <li>No pedestrian shall cross a public road without satisfying himself or herself that the roadway is sufficiently free from oncoming traffic to permit him or her to cross the road in safety.</li>
+            <li>A pedestrian, when crossing a public road by means of a pedestrian crossing or in any other manner, shall not linger on such road but shall proceed with due despatch.</li>
+            <li>No pedestrian on a public road shall conduct himself or herself in such a manner as to or as is likely to constitute a source of danger to himself or herself or to other traffic which is or may be on such road.</li>
+            <li>A pedestrian may cross a public road only at a pedestrian crossing or an intersection or at a distance further than 50 metres from such pedestrian crossing or intersection.</li>
+        </ul>
+    </div>
 </body>
+<script src="my_screen.js" charset="utf-8"></script>
 
 </html>
